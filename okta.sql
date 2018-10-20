@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 19, 2018 at 09:45 AM
+-- Generation Time: Oct 20, 2018 at 01:51 PM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.10
 
@@ -42,10 +42,10 @@ CREATE TABLE `okta` (
 
 INSERT INTO `okta` (`id`, `username`, `password`, `level`, `fullname`) VALUES
 (1, 'okta', 'okta', 'admin', 'widya oktaviani'),
-(2, 'retha', 'smg', 'user', 'caesariyanti maretha'),
-(3, 'agya', 'clp', 'guest', 'agya rahmani'),
-(4, 'restu', 'bna', 'guest', 'restu pakerti'),
-(5, 'lisa', 'blackpink', 'user', 'lisa manoban');
+(6, 'wulan', 'wulan', 'user', 'wulan aprianingsih'),
+(7, 'agfid', 'agfid', 'guest', 'agfid danu prasetyo'),
+(8, 'agya', 'agya', 'guest', 'agya rahmani divasasri'),
+(9, 'ahmad', 'ahmad', 'user', 'ahmad fauzi budiyanto');
 
 --
 -- Indexes for dumped tables
@@ -65,7 +65,7 @@ ALTER TABLE `okta`
 -- AUTO_INCREMENT for table `okta`
 --
 ALTER TABLE `okta`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

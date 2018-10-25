@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 20, 2018 at 01:51 PM
+-- Generation Time: Oct 19, 2018 at 09:38 AM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.10
 
@@ -25,10 +25,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `okta`
+-- Table structure for table `user`
 --
 
-CREATE TABLE `okta` (
+CREATE TABLE `user` (
   `id` int(10) NOT NULL,
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
@@ -37,24 +37,24 @@ CREATE TABLE `okta` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `okta`
+-- Dumping data for table `user`
 --
 
-INSERT INTO `okta` (`id`, `username`, `password`, `level`, `fullname`) VALUES
-(1, 'okta', 'okta', 'admin', 'widya oktaviani'),
-(2, 'wulan', 'wulan', 'user', 'wulan aprianingsih'),
-(3, 'agfid', 'agfid', 'guest', 'agfid danu prasetyo'),
-(4, 'agya', 'agya', 'guest', 'agya rahmani divasasri'),
-(5, 'ahmad', 'ahmad', 'user', 'ahmad fauzi budiyanto');
+INSERT INTO `user` (`id`, `username`, `password`, `level`, `fullname`) VALUES
+(1, 'Maretha', 'ayufadh', 'user', 'Caesariyanti Maretha Ayu Fadhilah'),
+(2, 'Dhanissa', 'dhanisaal', 'user', 'Dhanissa Nafi\'ul Lathifa'),
+(3, 'Fakhrul', 'fakhrulzz', 'user', 'Fakhrul Zakaria'),
+(4, 'Fitri', 'fitriss', 'user', 'Fitri Setiyani'),
+(5, 'Intan', 'intankk', 'user', 'Intan Komariyah');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `okta`
+-- Indexes for table `user`
 --
-ALTER TABLE `okta`
+ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -62,10 +62,10 @@ ALTER TABLE `okta`
 --
 
 --
--- AUTO_INCREMENT for table `okta`
+-- AUTO_INCREMENT for table `user`
 --
-ALTER TABLE `okta`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+ALTER TABLE `user`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

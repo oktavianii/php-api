@@ -1,12 +1,14 @@
 body{
   margin: 0;
   padding: 0;
-  background-color: #C0C0C0;
+  background-color: #00663d;
 }
 h1{
   font-family:  'Helvetica', sans-serif;
   text-align: center;
   margin-top: 30px;
+  background-color: #009973;
+  color: #fff;
 }
 #input-form{
   position: relative;
@@ -15,7 +17,7 @@ h1{
   margin-right: 10%;
   margin-top: 60px;
   border-radius: 6px;
-  background-color: #fff;
+  background-color: #000;
   box-shadow: 0 0 7px 0 rgba(136, 146, 146, 0.2);
   padding: 30px;
 }
@@ -33,7 +35,7 @@ form{
 label{
   font-family:  'Helvetica', sans-serif;
   font-size: 16px;
-  color: #1A2C72;
+  color: #009973;
   font-weight: 600;
 }
 input{
@@ -45,6 +47,7 @@ input{
   margin-top: -5px;
   margin-bottom: 2px;
   font-size: 16px;
+  background-color: #0000;
 }
 select{
   font-family:  'Helvetica', sans-serif;
@@ -57,7 +60,7 @@ select{
   font-size: 16px;
 }
 .bg-blue{
-  background-color: #CCAAFF;
+  background-color: #009973;
   color: #fff;
   box-shadow: 0 0 7px 0px #0000;
   border: 1px solid #fff;

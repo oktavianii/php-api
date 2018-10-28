@@ -1,6 +1,5 @@
 <?php 
 $conn = mysqli_connect("localhost","root","","php-api");
-
 // Check connection
 if (mysqli_connect_errno()){
 	echo "Koneksi database gagal : " . mysqli_connect_error();
@@ -28,10 +27,11 @@ $students = query("SELECT * FROM okta");
 	<body>
 		<table border="1px" cellpadding="10" cellspacing="0">
 	 		<tr>
-	 			<td bgcolor="#D6D8DC" align="center">Id</td>
-	 			<td bgcolor="#D6D8DC" align="center">Username</td>
-	 			<td bgcolor="#D6D8DC" align="center">Level</td>
-	 			<td bgcolor="#D6D8DC" align="center">Fullname</td>
+	 			<td bgcolor="#18A6BB" align="center">Id</td>
+	 			<td bgcolor="#18A6BB" align="center">Username</td>
+	 			<td bgcolor="#18A6BB" align="center">Level</td>
+	 			<td bgcolor="#18A6BB" align="center">Fullname</td>
+	 			<td bgcolor="#18A6BB" align="center">Action</td>
 	 		</tr>
 	 		<?php foreach($students as $student) : ?>
 				 <tr>
@@ -39,6 +39,10 @@ $students = query("SELECT * FROM okta");
 				 	<td><?= $student["username"] ?></td>
 				 	<td><?= $student["level"] ?></td>
 				 	<td><?= $student["fullname"] ?></td>
+				  <td>
+						<a  href="edit.php?Id=<?php echo $student['id'];?>">Edit</a> |
+						<a  href="del.php?Id=<?php echo $student['id']; ?>">Hapus</a>
+		  			</td>
 				 </tr>
 				<?php endforeach; ?>
 	 	</table>

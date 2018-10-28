@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 20, 2018 at 01:51 PM
+-- Generation Time: Oct 28, 2018 at 12:16 PM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.10
 
@@ -41,7 +41,7 @@ CREATE TABLE `okta` (
 --
 
 INSERT INTO `okta` (`id`, `username`, `password`, `level`, `fullname`) VALUES
-(1, 'okta', 'okta', 'admin', 'widya oktaviani'),
+(1, 'widya', 'widya', 'admin', 'widya oktaviani'),
 (2, 'wulan', 'wulan', 'user', 'wulan aprianingsih'),
 (3, 'agfid', 'agfid', 'guest', 'agfid danu prasetyo'),
 (4, 'agya', 'agya', 'guest', 'agya rahmani divasasri'),
